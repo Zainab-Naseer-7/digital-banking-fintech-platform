@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXORA BANK - Ultra-Premium Next-Generation Digital Banking & Global FinTech Platform. Instant transfers, multi-currency accounts, and intelligent security.">
+  <title>NEXORA BANK | Banking, Reimagined for Your Future</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="landing-body">
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="landing-nav">
+    <a href="index.html" class="brand-logo">
+      <div class="brand-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+      </div>
+      <span>NEXORA</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#cards" class="nav-link">Cards</a></li>
+        <li><a href="#security" class="nav-link">Security</a></li>
+        <li><a href="#pricing" class="nav-link">Tiers</a></li>
+        <li><a href="dashboard.html" class="nav-link" style="color:var(--accent-cyan);">Live Dashboard →</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <button class="btn-icon theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Mode">
+        <span class="theme-toggle-icon">☀️</span>
+      </button>
+      <button class="btn btn-ghost" onclick="openModal('modal-login')">Log In</button>
+      <a href="dashboard.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span style="font-size:0.75rem;">✨</span>
+          <span>Next-Gen FinTech Architecture 2.0</span>
+        </div>
+
+        <h1 class="hero-title">
+          Banking, <span class="text-gradient-cyan">Reimagined</span> for Your Future.
+        </h1>
+
+        <p class="hero-desc">
+          NEXORA provides an intelligent, borderless private banking ecosystem with quantum-level security, instant global liquidity, and AI-driven wealth intelligence.
+        </p>
+
+        <div class="hero-actions">
+          <a href="dashboard.html" class="btn btn-primary btn-lg">
+            <span>Explore Platform</span>
+            <span>→</span>
+          </a>
+          <button class="btn btn-secondary btn-lg" onclick="openModal('modal-register')">
+            <span>Open an Account</span>
+          </button>
+        </div>
+
+        <div class="hero-badges">
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>FDIC Insured to $250,000</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 14 14"/>
+            </svg>
+            <span>Zero Cross-Border Markup</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Showcase -->
+      <div class="hero-visual">
+        <div class="hero-visual-glow"></div>
+
+        <div class="card-showcase-container">
+          <!-- Floating Widget 1 -->
+          <div class="floating-widget floating-widget-1">
+            <div class="widget-icon-box widget-icon-income">↑</div>
+            <div>
+              <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Stripe Payout</div>
+              <div style="font-size:1.05rem; font-weight:700; color:var(--success);">+$3,450.00</div>
+            </div>
+          </div>
+
+          <!-- Floating Widget 2 -->
+          <div class="floating-widget floating-widget-2">
+            <div class="widget-icon-box widget-icon-security">🛡️</div>
+            <div>
+              <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Security</div>
+              <div style="font-size:0.95rem; font-weight:700; color:var(--accent-cyan);">256-bit Active</div>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Bank Card -->
+          <div class="bank-card card-visa" id="hero-card">
+            <div class="bank-card-pattern"></div>
+            <div class="card-top">
+              <div class="card-bank-name">NEXORA</div>
+              <div class="card-brand-logo">VISA</div>
+            </div>
+            <div class="card-chip"></div>
+            <div class="card-number">•••• •••• •••• 4829</div>
+            <div class="card-bottom">
+              <div>
+                <div class="card-holder-label">Cardholder</div>
+                <div class="card-holder-name">ARIF KHAN</div>
+              </div>
+              <div>
+                <div class="card-expiry-label">Expires</div>
+                <div class="card-expiry-val">09/29</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Metrics Section -->
+  <section class="trust-section">
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-number text-gradient-cyan" data-target="2.5" data-suffix="M+">2.5M+</div>
+        <div class="trust-label">Active Global Customers</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-number text-gradient-purple" data-target="18" data-prefix="$" data-suffix="B+">$18B+</div>
+        <div class="trust-label">Transactions Processed</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-number text-gradient-cyan" data-target="99.99" data-suffix="%">99.99%</div>
+        <div class="trust-label">Platform Uptime SLA</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-number text-gradient-purple" data-target="150" data-suffix="+">150+</div>
+        <div class="trust-label">Countries Supported</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Digital Card Section -->
+  <section id="cards" class="section-container">
+    <div class="section-header">
+      <div class="badge badge-blue" style="margin-bottom: 0.8rem;">Physical & Virtual Issuance</div>
+      <h2>Engineered for Unmatched Precision</h2>
+      <p>Instant virtual card generation for ultra-secure online commerce and frosted obsidian physical metal cards for worldwide access.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3rem; align-items:center;">
+      <div style="display:flex; justify-content:center;">
+        <div class="card-showcase-container" style="max-width: 460px;">
+          <div class="bank-card card-virtual" id="interactive-bank-card">
+            <div class="bank-card-pattern"></div>
+            <div class="card-top">
+              <div class="card-bank-name">NEXORA VIRTUAL</div>
+              <div class="badge badge-success" id="card-status-badge">Active</div>
+            </div>
+            <div class="card-chip"></div>
+            <div class="card-number" id="showcase-card-number">•••• •••• •••• 4829</div>
+            <div class="card-bottom">
+              <div>
+                <div class="card-holder-label">Cardholder</div>
+                <div class="card-holder-name">ARIF KHAN</div>
+              </div>
+              <div>
+                <div class="card-expiry-label">Expires</div>
+                <div class="card-expiry-val">09/29</div>
+              </div>
+              <div class="card-brand-logo">VISA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="padding: 2.5rem;">
+        <h3 style="font-size: 1.45rem; font-weight: 700; margin-bottom: 0.8rem;">Complete Card Orchestration</h3>
+        <p style="color:var(--text-secondary); margin-bottom: 1.5rem;">Take absolute control of your spending power with real-time biometric locks, instant toggle freezing, and dynamic limit sliders.</p>
+
+        <div style="display:flex; gap:1rem; margin-bottom: 1.5rem; flex-wrap:wrap;">
+          <button class="btn btn-secondary btn-sm" id="card-reveal-btn">👁️ Reveal Details</button>
+          <button class="btn btn-secondary btn-sm" id="card-copy-number-btn">📋 Copy Number</button>
+          <button class="btn btn-danger btn-sm" id="card-freeze-toggle-btn">❄️ Freeze Card</button>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem; font-size:0.88rem;">
+            <span style="color:var(--text-secondary);">Monthly Spending Limit:</span>
+            <span style="font-weight:700; font-family:var(--font-display); color:var(--accent-cyan);" id="card-limit-display">$5,000.00</span>
+          </div>
+          <input type="range" min="1000" max="25000" step="500" value="5000" style="width:100%; accent-color:var(--accent-blue);" id="card-limit-slider">
+        </div>
+
+        <div style="display:flex; gap:0.5rem; border-top:1px solid var(--glass-border); padding-top:1.2rem;">
+          <button class="btn btn-secondary btn-sm card-type-tab" data-type="physical">Physical Card</button>
+          <button class="btn btn-primary btn-sm card-type-tab active" data-type="virtual">Virtual Card</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="section-container" style="background:var(--bg-secondary); border-top:1px solid var(--glass-border); border-bottom:1px solid var(--glass-border);">
+    <div class="section-header">
+      <div class="badge badge-blue" style="margin-bottom: 0.8rem;">Pinnacle FinTech</div>
+      <h2>Everything Modern Banking Should Be</h2>
+      <p>Built from the ground up for speed, transparency, and effortless international wealth management.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <h3>Multi-Currency Accounts</h3>
+        <p>Hold, exchange, and spend in 40+ currencies with real-time interbank conversion rates and zero inflated hidden spreads.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="13 17 18 12 13 7"></polyline>
+            <polyline points="6 17 11 12 6 7"></polyline>
+          </svg>
+        </div>
+        <h3>Instant Wire Rails</h3>
+        <p>Direct peer-to-peer and SwiftLink corridors settling transactions in seconds with automated end-to-end receipt confirmations.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+          </svg>
+        </div>
+        <h3>AI Wealth Analytics</h3>
+        <p>Interactive behavioral analysis that tracks cash flows, predicts future bills, and automatically routes surplus to savings goals.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h3>Bank-Grade Vault Security</h3>
+        <p>Hardware biometric verification, hardware token 2FA, granular permission levels, and instant suspicious login revocation.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <h3>Automated Bill Concierge</h3>
+        <p>Consolidate your utilities, telecoms, and SaaS subscriptions into an intelligent calendar with one-click zero-penalty settlements.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </div>
+        <h3>24/7 Private Concierge</h3>
+        <p>Connect immediately with dedicated financial advisors and technical bankers via encrypted in-app messaging or telephone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Certification Banner -->
+  <section id="security" class="section-container">
+    <div class="glass-card" style="padding: 3rem; background: var(--grad-card); border-color: rgba(37,99,235,0.3);">
+      <div style="display:grid; grid-template-columns: 1.2fr 0.8fr; gap:2rem; align-items:center;">
+        <div>
+          <div class="badge badge-success" style="margin-bottom:0.75rem;">SOC2 Type II & ISO 27001 Certified</div>
+          <h2 style="font-size:2.2rem; font-weight:800; margin-bottom:1rem;">Your Capital, Shielded by Military-Grade Encryption</h2>
+          <p style="color:var(--text-secondary); line-height:1.7;">
+            We implement automated cold-storage backups, multi-signature transaction authorizations, and dynamic AI fraud prevention models that scan transfers before execution.
+          </p>
+          <div style="display:flex; gap:2rem; margin-top:1.75rem;">
+            <div>
+              <div style="font-size:1.6rem; font-weight:800; font-family:var(--font-display); color:var(--accent-cyan);">256-bit</div>
+              <div style="font-size:0.85rem; color:var(--text-muted);">AES Encryption</div>
+            </div>
+            <div>
+              <div style="font-size:1.6rem; font-weight:800; font-family:var(--font-display); color:var(--accent-cyan);">0.00s</div>
+              <div style="font-size:0.85rem; color:var(--text-muted);">Fraud Detection Lag</div>
+            </div>
+            <div>
+              <div style="font-size:1.6rem; font-weight:800; font-family:var(--font-display); color:var(--accent-cyan);">$0</div>
+              <div style="font-size:0.85rem; color:var(--text-muted);">Unauthorized Liability</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;">
+          <div style="font-size:5.5rem; filter:drop-shadow(0 0 25px rgba(6,182,212,0.4));">🛡️</div>
+          <div style="font-weight:700; font-size:1.15rem; margin-top:0.5rem;">NEXORA SafeShield Active</div>
+          <div style="font-size:0.85rem; color:var(--text-muted);">Continuous Real-Time Auditing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / Account Tiers -->
+  <section id="pricing" class="section-container" style="background:var(--bg-secondary); border-top:1px solid var(--glass-border);">
+    <div class="section-header">
+      <div class="badge badge-blue" style="margin-bottom: 0.8rem;">Membership Options</div>
+      <h2>Tailored for High Performers</h2>
+      <p>Transparent pricing with zero hidden maintenance fees. Upgrade or downgrade at any time.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Standard Basic</h3>
+        <div style="font-size:2.4rem; font-weight:800; font-family:var(--font-display); margin:0.8rem 0;">$0<span style="font-size:1rem; color:var(--text-muted);">/mo</span></div>
+        <p style="margin-bottom:1.5rem;">For individuals desiring sleek, zero-overhead digital banking.</p>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem; font-size:0.9rem; color:var(--text-secondary); margin-bottom:2rem;">
+          <li>✓ Free Checking & Savings</li>
+          <li>✓ 1 Virtual Debit Card</li>
+          <li>✓ Domestic ACH Transfers</li>
+          <li>✓ Standard Support</li>
+        </ul>
+        <button class="btn btn-secondary" style="width:100%;" onclick="openModal('modal-register')">Get Started Free</button>
+      </div>
+
+      <div class="feature-card" style="border-color:var(--accent-blue); position:relative; overflow:hidden;">
+        <div style="position:absolute; top:12px; right:12px;" class="badge badge-blue">Popular</div>
+        <h3>Gold Premier</h3>
+        <div style="font-size:2.4rem; font-weight:800; font-family:var(--font-display); margin:0.8rem 0;">$19<span style="font-size:1rem; color:var(--text-muted);">/mo</span></div>
+        <p style="margin-bottom:1.5rem;">For remote professionals and frequent international travelers.</p>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem; font-size:0.9rem; color:var(--text-secondary); margin-bottom:2rem;">
+          <li>✓ Everything in Standard</li>
+          <li>✓ 5 Virtual Cards + 1 Metal Card</li>
+          <li>✓ Zero-Fee Global Wires</li>
+          <li>✓ 4.5% APY High-Yield Savings</li>
+          <li>✓ Priority 24/7 Concierge</li>
+        </ul>
+        <button class="btn btn-primary" style="width:100%;" onclick="openModal('modal-register')">Choose Gold</button>
+      </div>
+
+      <div class="feature-card">
+        <h3>Platinum Private</h3>
+        <div style="font-size:2.4rem; font-weight:800; font-family:var(--font-display); margin:0.8rem 0;">$49<span style="font-size:1rem; color:var(--text-muted);">/mo</span></div>
+        <p style="margin-bottom:1.5rem;">Bespoke wealth management, private banking, and credit lines.</p>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem; font-size:0.9rem; color:var(--text-secondary); margin-bottom:2rem;">
+          <li>✓ Unlimited Virtual Cards</li>
+          <li>✓ Frosted Obsidian Heavy Metal Card</li>
+          <li>✓ Dedicated Wealth Banker</li>
+          <li>✓ 5.2% APY Prime Savings</li>
+          <li>✓ Airport Lounge Access & Travel Perks</li>
+        </ul>
+        <button class="btn btn-secondary" style="width:100%;" onclick="openModal('modal-register')">Contact Private Client</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 4rem 4rem 2rem; background: var(--bg-primary); border-top: 1px solid var(--glass-border);">
+    <div style="max-width: 1360px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 3rem; margin-bottom: 3rem;">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 1rem;">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span>NEXORA</span>
+        </div>
+        <p style="color:var(--text-muted); font-size:0.9rem; max-width:320px; line-height:1.6;">
+          Next-generation digital banking platform powering borderless finance for individuals and international enterprises.
+        </p>
+      </div>
+
+      <div>
+        <div style="font-weight:700; margin-bottom:1rem; font-size:0.95rem;">Products</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.88rem; color:var(--text-secondary);">
+          <li><a href="dashboard.html" class="nav-link">Checking Account</a></li>
+          <li><a href="dashboard.html" class="nav-link">High-Yield Savings</a></li>
+          <li><a href="dashboard.html" class="nav-link">Virtual & Metal Cards</a></li>
+          <li><a href="dashboard.html" class="nav-link">Wire Transfers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="font-weight:700; margin-bottom:1rem; font-size:0.95rem;">Platform</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.88rem; color:var(--text-secondary);">
+          <li><a href="#security" class="nav-link">Security Center</a></li>
+          <li><a href="#pricing" class="nav-link">Account Tiers</a></li>
+          <li><a href="dashboard.html" class="nav-link">Financial Analytics</a></li>
+          <li><a href="dashboard.html" class="nav-link">API & Integrations</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="font-weight:700; margin-bottom:1rem; font-size:0.95rem;">Company</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.88rem; color:var(--text-secondary);">
+          <li><a href="#" class="nav-link">About Nexora</a></li>
+          <li><a href="#" class="nav-link">Careers</a></li>
+          <li><a href="#" class="nav-link">Press & Media</a></li>
+          <li><a href="#" class="nav-link">Privacy & Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid var(--glass-border); padding-top:2rem; max-width:1360px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:0.82rem; color:var(--text-muted);">
+      <div>© 2026 NEXORA BANK Inc. All rights reserved. Portfolio FinTech Showcase.</div>
+      <div>Demo product. No actual monetary transactions processed.</div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Sign In to NEXORA</h3>
+        <button class="modal-close-btn" onclick="closeModal('modal-login')">✕</button>
+      </div>
+
+      <div style="background:var(--surface); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:0.85rem; margin-bottom:1.5rem; font-size:0.85rem; display:flex; align-items:center; gap:0.6rem;">
+        <span>💡</span>
+        <span style="color:var(--text-secondary);">Demo credentials are prefilled. Click <strong>Launch Dashboard</strong> to enter.</span>
+      </div>
+
+      <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" value="arif.khan@nexora.bank" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" value="••••••••••••" required>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; font-size:0.85rem;">
+          <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+            <input type="checkbox" checked style="accent-color:var(--accent-blue);"> Remember me
+          </label>
+          <a href="#" style="color:var(--accent-cyan);">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; padding:0.85rem;">
+          Launch Dashboard →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal-overlay" id="modal-register">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Open a NEXORA Account</h3>
+        <button class="modal-close-btn" onclick="closeModal('modal-register')">✕</button>
+      </div>
+
+      <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+        <div class="form-group">
+          <label class="form-label">Full Legal Name</label>
+          <input type="text" class="form-control" placeholder="e.g. Arif Khan" value="Arif Khan" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Work or Personal Email</label>
+          <input type="email" class="form-control" placeholder="name@example.com" value="arif.khan@nexora.bank" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Create Master Password</label>
+          <input type="password" class="form-control" value="DemoSecure2026!" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Country of Residence</label>
+          <select class="form-control">
+            <option selected>United States</option>
+            <option>United Kingdom</option>
+            <option>Switzerland</option>
+            <option>Singapore</option>
+            <option>United Arab Emirates</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1rem; padding:0.85rem;">
+          Complete Registration & Enter
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
